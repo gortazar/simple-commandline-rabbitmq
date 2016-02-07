@@ -12,16 +12,17 @@ public class Sender {
 	public static void main(String[] args)
 	      throws IOException, TimeoutException {
 
-		if(args.length != 2) {
-			System.out.println("Usage: java -jar rabbitmq-receiver.jar <queue name> <message>");
+		if(args.length != 3) {
+			System.out.println("Usage: java -jar rabbitmq-receiver.jar <host> <queue name> <message>");
 			System.exit(1);
 		}
 
-		final String QUEUE_NAME = args[0];
-		final String message = args[1];
+		final String HOST = args[0];
+		final String QUEUE_NAME = args[1];
+		final String message = args[2];
 
 	    ConnectionFactory factory = new ConnectionFactory();
-	    factory.setHost("localhost");
+	    factory.setHost(HOST);
 	    Connection connection = factory.newConnection();
 	    Channel channel = connection.createChannel();
 

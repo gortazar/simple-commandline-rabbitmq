@@ -6,6 +6,19 @@
 	<version>0.1.0-SNAPSHOT</version>
 	<name>Commandline RabbitMQ Sender</name>
 	<description>Commandline utility to send messages to a rabbitmq queue</description>
+	<url>https://github.com/gortazar/simple-commandline-rabbitmq</url>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/gortazar/simple-commandline-rabbitmq</url>
+	</scm>
 
 	<dependencies>
 		<dependency>
